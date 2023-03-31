@@ -16,16 +16,17 @@ const server = http.createServer((req, res) => {
     res.end("Welcome to the party")
   }
   //sends different text
-  if (req.url === "/about") {
+  else if (req.url === "/about") {
     res.end("Here is our short history")
-  }
-  //what happens if user access resource that dont exist
-  //once we send response we have sent response we end request
-  res.end(`
+  } else {
+    //what happens if user access resource that dont exist
+    //once we send response we have sent response we end request
+    res.end(`
   <h2>nah nothing here</h2>
   <p>this does not exist</p>
   <a href="/">back home</a>
   `)
+  }
 })
 
 //the port to listen for your method
