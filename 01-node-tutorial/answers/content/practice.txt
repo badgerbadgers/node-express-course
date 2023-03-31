@@ -1,1 +1,1 @@
-[object Object] "from" tim.almacen
+this is a sentence "from" tim.almacen

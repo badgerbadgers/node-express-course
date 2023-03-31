@@ -1,3 +1,4 @@
 const sentence = "this is a sentence"
 
-exports.sentence = sentence
+//use module.exports
+module.exports = sentence
